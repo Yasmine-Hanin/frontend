@@ -1,0 +1,46 @@
+.fa {
+  display: inline-block;
+  font: normal normal normal 12px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-hand-pointer-o::before {
+  content: "\f25a";
+}
+
+.ol-control.ol-bar {
+  left: 94% !important;
+  top: 72%;
+  position: absolute;
+  z-index: 1000;
+  margin-bottom: 35px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  font-size: 40px !important;
+  text-align: center !important; /* Center the content horizontally */
+  vertical-align: middle !important; /* Center the content vertically */
+}
+
+.ol-control.ol-bar .ol-control button {
+  margin: 0px 0px !important;
+  background-color: #3c88a6 !important;
+  outline: none;
+  padding: 0 !important; /* Remove padding to make it square */
+  width: 40px; /* Set the desired width */
+  height: 40px; /* Set the desired height */
+  border-radius: 0px; /* Remove border radius to make it square */
+  text-align: center; /* Center the content horizontally */
+  vertical-align: middle; /* Center the content vertically */
+  line-height: 40px; /* Set the line height equal to the height for vertical centering */
+  box-shadow: 0 1px 2px rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+.ol-control.ol-bar .ol-control button i {
+  cursor: pointer !important;
+}

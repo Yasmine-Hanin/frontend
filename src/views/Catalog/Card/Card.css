@@ -1,0 +1,321 @@
+.mapstore-side-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 1px 0px 8px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+.mapstore-side-card:hover {
+  transform: scale(1.05);
+  cursor: auto;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.mapstore-side-card.selected {
+  border-color: #0074d9;
+}
+
+.mapstore-side-card.ms-sm {
+  padding: 10px;
+}
+
+.mapstore-side-card.ms-md {
+  padding: 15px;
+}
+
+.mapstore-side-card.ms-lg {
+  padding: 20px;
+}
+
+.mapstore-side-card.full-text {
+  height: auto;
+  overflow: auto;
+}
+
+.mapstore-side-card .ms-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.mapstore-side-card .ms-head .mapstore-side-card-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mapstore-side-card
+  .ms-head
+  .mapstore-side-card-container
+  .mapstore-side-card-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mapstore-side-card
+  .ms-head
+  .mapstore-side-card-container
+  .mapstore-side-card-inner
+  .mapstore-side-card-left-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mapstore-side-card
+  .ms-head
+  .mapstore-side-card-container
+  .mapstore-side-card-inner
+  .mapstore-side-card-left-container
+  .mapstore-side-card-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.mapstore-side-card
+  .ms-head
+  .mapstore-side-card-container
+  .mapstore-side-card-inner
+  .mapstore-side-card-left-container
+  .mapstore-side-card-info
+  .mapstore-side-card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.mapstore-side-card
+  .ms-head
+  .mapstore-side-card-container
+  .mapstore-side-card-inner
+  .mapstore-side-card-left-container
+  .mapstore-side-card-info
+  .mapstore-side-card-desc {
+  font-size: 14px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mapstore-side-card
+  .ms-head
+  .mapstore-side-card-container
+  .mapstore-side-card-inner
+  .mapstore-side-card-left-container
+  .mapstore-side-card-info
+  .mapstore-side-card-desc
+  span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mapstore-side-card .ms-head {
+  display: flex;
+  min-height: 104px;
+  position: relative;
+}
+.mapstore-side-card
+  .ms-head
+  .mapstore-side-card-container
+  .mapstore-side-card-inner
+  .mapstore-side-card-left-container
+  .mapstore-side-card-info
+  .mapstore-side-card-caption {
+  font-size: 14px;
+  color: #999;
+}
+
+.mapstore-side-card
+  .ms-head
+  .mapstore-side-card-container
+  .mapstore-side-card-inner
+  .mapstore-side-card-left-container
+  .mapstore-side-card-info
+  .mapstore-side-card-caption
+  span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+---------------------------------------------------- .mapstore-side-preview {
+  align-items: center;
+}
+.mapstore-side-preview .configure-map-templates-preview {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mapstore-side-preview img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.mapstore-side-preview {
+  display: flex;
+  margin: 0;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  padding: 4px;
+}
+--------------------------------------------------------
+  .mapstore-side-card-right-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+---------------------------------------------------------
+  .mapstore-side-card-tool {
+  width: auto;
+  display: flex;
+  height: 100%;
+}
+
+.mapstore-side-card-tool.glyphicon {
+  color: #fff;
+}
+.mapstore-side-card-tool button {
+  pointer-events: auto;
+}
+
+.mapstore-side-card-tool .btn-square-md {
+  width: 30px !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  height: 30px !important;
+  text-align: center;
+  padding: 0px;
+  font-size: 12px;
+}
+
+.mapstore-side-card-tool .btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.mapstore-side-card-tool .btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.mapstore-side-card-tool .btn-primary:focus,
+.mapstore-side-card-tool .btn-primary.focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.mapstore-side-card-tool .btn-primary.disabled,
+.mapstore-side-card-tool .btn-primary:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.mapstore-side-card-tool .btn-primary:not(:disabled):not(.disabled):active,
+.mapstore-side-card-tool .btn-primary:not(:disabled):not(.disabled).active,
+.mapstore-side-card-tool .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.mapstore-side-card-tool
+  .btn-primary:not(:disabled):not(.disabled):active:focus,
+.mapstore-side-card-tool
+  .btn-primary:not(:disabled):not(.disabled).active:focus,
+.mapstore-side-card-tool .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.btn-group {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.mapstore-side-card-tool.text-center {
+  text-align: center;
+}
+
+-------------------------------------------- .catalog-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li {
+  list-style: none;
+  margin-right: -10px;
+}
+
+.pagination li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  color: #141111 !important ;
+  text-decoration: none;
+  padding: 0px 11px !important;
+}
+
+.pagination li.active a {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination li.disabled a {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.pagination li a:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+.pagination li a::after {
+  border-left: 0px !important;
+}
+.pagination li a::before {
+  border-left: 20px #005cbf !important;
+}
+
+.push-right {
+  text-align: center;
+  margin-left: auto;
+}

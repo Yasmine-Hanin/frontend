@@ -1,0 +1,32 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dd7373;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 100px;
+}
+
+.page-header__title {
+  display: 25%;
+  align-items: center;
+}
+
+.page-header__icon {
+  display: 25%;
+  font-size: 32px;
+  margin-right: 10px;
+  color: #707070;
+}
+
+.page-header__close-btn {
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  color: #707070;
+  cursor: pointer;
+}
+
+.page-header__close-btn:hover {
+  color: #e74c3c;
+}
